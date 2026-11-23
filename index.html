@@ -116,16 +116,22 @@ h2{ margin-top:8px; font-size:clamp(1.4rem, 5vw, 1.95rem); font-weight:600; line
 .card .en{ font-family:var(--serif); font-size:.8rem; letter-spacing:.18em; color:var(--blue); }
 .card h3{ margin-top:6px; font-size:1.2rem; font-weight:600; }
 .card p{ margin-top:8px; color:var(--soft); font-size:.95rem; }
-.chips{ list-style:none; display:flex; flex-wrap:wrap; gap:6px; margin-top:14px; }
-.chips li{ padding:5px 11px; background:var(--sky); border-radius:var(--r); font-size:.88rem; color:var(--blue-d); }
-.prog .big{ background:var(--sky); border-color:var(--sky2); }
-.prog .big .chips li{ background:var(--white); }
+/* 그룹레슨: 사진 배경 카드 (다올 선택 C · 2026-11-23 · 키워드 칩 대신) */
+.prog .big{ position:relative; overflow:hidden; border:0; min-height:440px; display:flex; flex-direction:column; justify-content:flex-end; color:#FFFFFF; background:var(--ink); }
+.prog .big img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.prog .big::after{ content:""; position:absolute; inset:0; background:linear-gradient(to top, rgba(14,32,46,.9) 0%, rgba(14,32,46,.76) 50%, rgba(14,32,46,.4) 82%, rgba(14,32,46,.15) 100%); }
+.prog .big > :not(img){ position:relative; z-index:1; }
+.prog .big .en{ color:#E6F1F8; }
+.prog .big p{ color:#E8EFF4; }
+.gl{ list-style:none; display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:4px 18px; margin-top:18px; font-weight:500; }
+.gl li{ border-top:1px solid rgba(255,255,255,.5); padding-top:8px; }
+@media (max-width:359.98px){ .gl{ grid-template-columns:repeat(2, minmax(0,1fr)); } }
 .minis{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:10px; }
 .minis .card{ padding:20px 14px; text-align:center; }
 .minis .card h3{ font-size:1.02rem; margin-top:4px; }
 .spec{ margin-top:4px; }
 @media (max-width:439.98px){ .minis{ grid-template-columns:minmax(0,1fr); } .minis .card{ display:flex; align-items:baseline; justify-content:space-between; text-align:left; } }
-@media (min-width:900px){ .prog{ grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:18px; align-items:stretch; } .prog .side{ display:grid; gap:14px; align-content:start; } }
+@media (min-width:900px){ .prog{ grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:18px; align-items:stretch; } .prog .side{ display:grid; gap:14px; grid-template-rows:auto 1fr; } .prog .spec{ display:flex; flex-direction:column; justify-content:center; } }
 
 /* 체험 */
 .trial{ display:grid; grid-template-columns:minmax(0,1fr); gap:10px; max-width:860px; margin-inline:auto; }
@@ -239,10 +245,11 @@ h2{ margin-top:8px; font-size:clamp(1.4rem, 5vw, 1.95rem); font-weight:600; line
       <div class="head center reveal"><span class="en">Program</span><h2 id="program-h">그룹 · 듀엣 · 개인 · <span class="nw">강사레슨</span></h2></div>
       <div class="prog">
         <div class="card big reveal">
+          <img src="pq-group.webp" alt="" width="1000" height="800" loading="lazy" />
           <span class="en">Group Lesson</span>
           <h3>특별한 그룹레슨</h3>
           <p>원하는 프로그램을 다양한 강사님과 <span class="nw">함께해 보세요.</span></p>
-          <ul class="chips"><li>스트레칭</li><li>근막이완</li><li>다이어트</li><li>체형교정</li><li>근력증진</li><li>바디라인</li></ul>
+          <ul class="gl"><li>스트레칭</li><li>근막이완</li><li>다이어트</li><li>체형교정</li><li>근력증진</li><li>바디라인</li></ul>
         </div>
         <div class="side">
           <div class="minis reveal">
