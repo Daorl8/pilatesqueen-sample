@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>필라테스퀸 PILATES QUEEN | 김포 장기동 기구필라테스 · 체형교정</title>
+<meta name="description" content="김포 장기동 필라테스퀸 — CES교정운동 전문가 원장직강. 그룹 · 듀엣 · 개인 · 강사레슨, 체형교정 · 산모 · 키즈 · 실버레슨. 김포한강2로104번길 62 두현프라자 6층 · 010-7769-8815" />
+<link rel="canonical" href="https://pilatesqueen-sample.lgt3232.workers.dev/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:site_name" content="필라테스퀸 PILATES QUEEN" />
+<meta property="og:title" content="필라테스퀸 · 김포 장기동 기구필라테스" />
+<meta property="og:description" content="CES교정운동 전문가 원장직강 · 그룹/듀엣/개인수업" />
+<meta property="og:url" content="https://pilatesqueen-sample.lgt3232.workers.dev/" />
+<meta property="og:image" content="https://pilatesqueen-sample.lgt3232.workers.dev/og-pq.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#FFFFFF" />
+<link rel="icon" href="favicon.png" type="image/png" />
+<!-- 시안 도메인 = pilatesqueen-sample.lgt3232.workers.dev. 고객 인계 시 grep lgt3232 → canonical·og:url·og:image·JSON-LD url/image 치환 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "필라테스퀸",
+  "alternateName": "PILATES QUEEN",
+  "url": "https://pilatesqueen-sample.lgt3232.workers.dev/",
+  "image": "https://pilatesqueen-sample.lgt3232.workers.dev/og-pq.jpg",
+  "telephone": "+82-10-7769-8815",
+  "address": { "@type": "PostalAddress", "streetAddress": "김포한강2로104번길 62 두현프라자 6층", "addressLocality": "김포시", "addressRegion": "경기도", "addressCountry": "KR" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "22:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "12:00" }
+  ],
+  "sameAs": ["https://www.instagram.com/pilates_queen8/", "https://blog.naver.com/pilatesqueen8", "https://m.place.naver.com/place/1279003738/home"]
+}
+</script>
+<style>
+@font-face{ font-family:"PQ Cinzel"; font-weight:400 600; font-display:swap; src:url("pq-cinzel.woff2") format("woff2"); }
+@font-face{ font-family:"PQ Sans"; font-weight:300 700; font-display:swap; src:url("pq-pretendard.woff2") format("woff2"); }
+:root{
+  --white:#FFFFFF;
+  --sky:#EEF6FB;   /* 로고 원 가장 옅은 색 */
+  --sky2:#D7EAF6;
+  --blue:#2B6A90;  /* 버튼 · 강조(흰 글자 5.9:1) */
+  --blue-d:#1F5374;
+  --ink:#1B2A35;
+  --soft:#53626D;
+  --line:#DCE6EC;
+  --r:2px;
+  --serif:"PQ Cinzel","PQ Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --sans:"PQ Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{ box-sizing:border-box; margin:0; padding:0; }
+html{ scroll-behavior:auto; scroll-padding-top:118px; -webkit-text-size-adjust:100%; }
+body{ font-family:var(--sans); color:var(--ink); background:var(--white); line-height:1.75; font-size:16px; -webkit-font-smoothing:antialiased; word-break:keep-all; overflow-wrap:break-word; }
+img{ max-width:100%; height:auto; display:block; }
+a{ color:inherit; }
+:focus-visible{ outline:2px solid var(--blue); outline-offset:3px; }
+.foot :focus-visible{ outline-color:#FFFFFF; }
+[tabindex="-1"]:focus{ outline:none; }
+.wrap{ width:min(100% - 40px, 1120px); margin-inline:auto; }
+.nw{ white-space:nowrap; }
+.cz{ font-family:var(--serif); font-weight:500; letter-spacing:.14em; }
+
+/* 헤더 */
+.top{ position:sticky; top:0; z-index:50; background:var(--white); border-bottom:1px solid var(--line); }
+.top .bar{ display:flex; align-items:center; justify-content:space-between; gap:16px; height:64px; }
+.brand{ display:flex; align-items:center; gap:10px; text-decoration:none; white-space:nowrap; }
+.brand img{ width:38px; height:38px; }
+.brand b{ font-family:var(--serif); font-weight:600; font-size:1.05rem; letter-spacing:.16em; color:var(--blue-d); }
+.nav{ display:none; gap:30px; font-family:var(--serif); font-size:.84rem; letter-spacing:.14em; }
+.nav a{ text-decoration:none; color:var(--soft); }
+.top .btn{ display:none; }
+.snav{ display:flex; border-top:1px solid var(--line); padding:0 4px; }
+.snav a{ flex:1 1 0; display:flex; align-items:center; justify-content:center; min-height:44px; font-family:var(--serif); font-size:.74rem; letter-spacing:.06em; text-decoration:none; color:var(--soft); white-space:nowrap; }
+@media (max-width:339.98px){ .brand b{ font-size:.92rem; letter-spacing:.1em; } }
+@media (min-width:900px){ .nav{ display:flex; } .snav{ display:none; } .top .btn{ display:inline-flex; min-height:40px; padding:0 18px; font-size:.88rem; } html{ scroll-padding-top:75px; } }
+@media (hover:hover){ .nav a:hover, .snav a:hover{ color:var(--blue); } }
+
+/* 버튼 */
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:50px; padding:0 22px; border-radius:var(--r); text-decoration:none; font-weight:600; font-size:.95rem; color:var(--blue-d); background:var(--white); border:1px solid var(--blue); transition:transform .1s, background-color .2s, color .2s; }
+.btn.fill{ background:var(--blue); color:#FFFFFF; }
+.btn:active{ transform:scale(.98); }
+@media (hover:hover){ .btn:hover{ background:var(--sky); } .btn.fill:hover{ background:var(--blue-d); border-color:var(--blue-d); } }
+
+/* 히어로: 하늘색 바탕 문구 + 넓은 사진 */
+.hero{ background:linear-gradient(180deg, var(--sky) 0%, var(--white) 100%); padding:52px 0 0; text-align:center; }
+.hero .en{ font-family:var(--serif); font-size:.86rem; letter-spacing:.24em; color:var(--blue); }
+.hero h1{ margin-top:14px; font-size:clamp(1.6rem, 6vw, 2.7rem); font-weight:600; line-height:1.38; letter-spacing:-.01em; }
+.hero .sub{ margin-top:12px; color:var(--soft); }
+.hero .tags{ list-style:none; display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-top:20px; }
+.hero .tags li{ padding:5px 12px; border:1px solid var(--sky2); background:var(--white); border-radius:var(--r); font-size:.88rem; color:var(--blue-d); }
+.cta{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px; margin:28px auto 0; max-width:480px; }
+.cta .btn:first-child{ grid-column:1 / -1; }
+@media (max-width:439.98px){ .cta{ grid-template-columns:minmax(0,1fr); } }
+.hero .shot{ margin:44px auto 0; width:min(100% - 40px, 1120px); }
+.hero .shot img{ width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:var(--r); }
+@media (max-width:767.98px){ .hero .shot img{ aspect-ratio:3/4; } .hero .shot{ max-width:460px; } }
+@media (min-width:900px){ .hero{ padding-top:76px; } }
+
+/* 공통 */
+.sec{ padding:96px 0; }
+.sec.sky{ background:var(--sky); }
+.head{ margin-bottom:36px; }
+.head .en{ display:block; font-family:var(--serif); font-size:.86rem; letter-spacing:.22em; color:var(--blue); }
+h2{ margin-top:8px; font-size:clamp(1.4rem, 5vw, 1.95rem); font-weight:600; line-height:1.42; }
+.lead{ color:var(--soft); }
+.center{ text-align:center; }
+
+/* 수업 */
+.prog{ display:grid; grid-template-columns:minmax(0,1fr); gap:14px; }
+.card{ background:var(--white); border:1px solid var(--line); border-radius:var(--r); padding:26px 24px; }
+.card .en{ font-family:var(--serif); font-size:.8rem; letter-spacing:.18em; color:var(--blue); }
+.card h3{ margin-top:6px; font-size:1.2rem; font-weight:600; }
+.card p{ margin-top:8px; color:var(--soft); font-size:.95rem; }
+.chips{ list-style:none; display:flex; flex-wrap:wrap; gap:6px; margin-top:14px; }
+.chips li{ padding:5px 11px; background:var(--sky); border-radius:var(--r); font-size:.88rem; color:var(--blue-d); }
+.prog .big{ background:var(--sky); border-color:var(--sky2); }
+.prog .big .chips li{ background:var(--white); }
+.minis{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:10px; }
+.minis .card{ padding:20px 14px; text-align:center; }
+.minis .card h3{ font-size:1.02rem; margin-top:4px; }
+.spec{ margin-top:4px; }
+@media (max-width:439.98px){ .minis{ grid-template-columns:minmax(0,1fr); } .minis .card{ display:flex; align-items:baseline; justify-content:space-between; text-align:left; } }
+@media (min-width:900px){ .prog{ grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:18px; align-items:stretch; } .prog .side{ display:grid; gap:14px; align-content:start; } }
+
+/* 체험 */
+.trial{ display:grid; grid-template-columns:minmax(0,1fr); gap:10px; max-width:860px; margin-inline:auto; }
+.trial li{ list-style:none; display:flex; justify-content:space-between; align-items:center; gap:12px; background:var(--white); border:1px solid var(--sky2); border-radius:var(--r); padding:22px 24px; }
+.trial b{ font-weight:600; font-size:1.05rem; }
+.trial span{ font-family:var(--serif); font-weight:600; font-size:1.35rem; color:var(--blue-d); white-space:nowrap; letter-spacing:.02em; }
+.trial span small{ font-family:var(--sans); font-size:.9rem; font-weight:600; margin-left:2px; }
+@media (min-width:768px){ .trial{ grid-template-columns:repeat(3, minmax(0,1fr)); } .trial li{ flex-direction:column; align-items:flex-start; padding:28px 24px; } }
+.trial-note{ margin:22px auto 0; max-width:860px; text-align:center; color:var(--soft); font-size:.95rem; }
+.trial-cta{ display:flex; justify-content:center; margin-top:22px; }
+.trial-cta .btn{ min-width:260px; }
+
+/* 왜 퀸 */
+.why{ display:grid; grid-template-columns:minmax(0,1fr); gap:14px; }
+.why .card .n{ font-family:var(--serif); font-weight:600; font-size:1.5rem; color:var(--blue); letter-spacing:.04em; }
+.why .card h3{ margin-top:2px; }
+@media (min-width:900px){ .why{ grid-template-columns:repeat(3, minmax(0,1fr)); gap:18px; } }
+
+/* 공간 */
+.space{ list-style:none; display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:8px; }
+.space figure{ margin:0; }
+.space img{ width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:var(--r); background:var(--sky); }
+.space figcaption{ margin-top:6px; font-size:.86rem; color:var(--soft); }
+.space li:last-child{ display:none; }
+@media (min-width:768px){ .space{ grid-template-columns:repeat(3, minmax(0,1fr)); gap:14px; } .space li:last-child{ display:block; } }
+.fac{ list-style:none; display:flex; flex-wrap:wrap; justify-content:center; gap:8px 18px; margin-top:28px; font-weight:500; }
+.fac li{ display:flex; align-items:center; gap:8px; }
+.fac li::before{ content:""; width:5px; height:5px; background:var(--blue); }
+
+/* 오시는 길 */
+.visit .grid{ display:grid; grid-template-columns:minmax(0,1fr); gap:36px; }
+.vinfo{ border-top:1px solid var(--blue); }
+.vinfo div{ display:grid; grid-template-columns:84px minmax(0,1fr); gap:12px; padding:16px 0; border-bottom:1px solid var(--line); }
+.vinfo dt{ font-family:var(--serif); font-size:.8rem; letter-spacing:.12em; color:var(--blue); padding-top:3px; }
+.vinfo dd{ font-size:.96rem; }
+.vinfo dd p + p{ margin-top:4px; }
+.vinfo .way{ color:var(--soft); }
+.visit .row{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px; margin-top:24px; }
+.visit .row .btn:first-child{ grid-column:1 / -1; }
+@media (max-width:439.98px){ .visit .row{ grid-template-columns:minmax(0,1fr); } }
+.map{ width:100%; height:300px; border:0; border-radius:var(--r); background:var(--sky); display:block; }
+@media (min-width:900px){ .visit .grid{ grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:64px; align-items:start; } .map{ height:100%; min-height:520px; } }
+
+/* 푸터 */
+.foot{ padding:48px 0 120px; background:#1B3446; color:#D3E1EA; font-size:.88rem; }
+.foot .brand b{ color:#FFFFFF; }
+.foot p{ margin-top:6px; }
+.foot .brand + p{ margin-top:16px; }
+@media (min-width:900px){ .foot{ padding-bottom:48px; } }
+
+/* 모바일 하단 바 */
+.quick{ position:fixed; left:0; right:0; bottom:0; z-index:60; display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:6px; padding:8px 10px calc(8px + env(safe-area-inset-bottom)); background:var(--white); border-top:1px solid var(--line); }
+.quick a{ display:flex; align-items:center; justify-content:center; min-height:48px; border-radius:var(--r); font-size:.88rem; font-weight:600; text-decoration:none; border:1px solid var(--blue); color:var(--blue-d); white-space:nowrap; }
+.quick a.fill{ background:var(--blue); color:#FFFFFF; }
+@media (min-width:900px){ .quick{ display:none; } }
+
+/* 나타나기 (동작 줄이기 설정이어도 강제 재생 · 다올 방침) */
+.js .intro > *{ opacity:0; transform:translateY(16px); transition:opacity .8s ease, transform .8s ease; }
+.js .intro.on > *{ opacity:1; transform:none; }
+.js .intro.on > :nth-child(2){ transition-delay:.08s; }
+.js .intro.on > :nth-child(3){ transition-delay:.16s; }
+.js .intro.on > :nth-child(4){ transition-delay:.24s; }
+.js .intro.on > :nth-child(5){ transition-delay:.32s; }
+.js .reveal{ opacity:0; transform:translateY(18px); transition:opacity .7s ease var(--d,0s), transform .7s ease var(--d,0s); }
+.js .reveal.in{ opacity:1; transform:none; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="PILATES QUEEN 필라테스퀸 처음으로"><img src="pq-emblem.webp" alt="" width="360" height="360" /><b>PILATES QUEEN</b></a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#program">PROGRAM</a>
+      <a href="#trial">TRIAL</a>
+      <a href="#space">SPACE</a>
+      <a href="#visit">VISIT</a>
+    </nav>
+    <a class="btn fill" href="https://m.place.naver.com/place/1279003738/home" target="_blank" rel="noopener">네이버 예약</a>
+  </div>
+  <nav class="snav" aria-label="섹션 바로가기">
+    <a href="#program">PROGRAM</a>
+    <a href="#trial">TRIAL</a>
+    <a href="#space">SPACE</a>
+    <a href="#visit">VISIT</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap intro">
+      <p class="en">Gimpo · Janggi-dong</p>
+      <h1 id="hero-h">CES교정운동 <span class="nw">전문가 원장직강</span></h1>
+      <p class="sub">김포 장기동 기구필라테스, <span class="nw">필라테스퀸</span></p>
+      <ul class="tags"><li>체형교정</li><li>코어강화</li><li>근력증진</li><li>유연성</li></ul>
+      <div class="cta">
+        <a class="btn fill" href="https://m.place.naver.com/place/1279003738/home" target="_blank" rel="noopener">네이버 예약 · 방문상담</a>
+        <a class="btn" href="tel:01077698815">전화 <span class="nw">010-7769-8815</span></a>
+        <a class="btn" href="https://blog.naver.com/pilatesqueen8/224206524904" target="_blank" rel="noopener">그룹레슨 시간표</a>
+      </div>
+    </div>
+    <div class="shot">
+      <picture>
+        <source media="(max-width:767.98px)" srcset="pq-hero-m.webp" width="810" height="1080" />
+        <img src="pq-hero.webp" alt="창가에 캐딜락 기구가 놓인 필라테스퀸 스튜디오" width="1280" height="720" fetchpriority="high" />
+      </picture>
+    </div>
+  </section>
+
+  <section class="sec" id="program" aria-labelledby="program-h">
+    <div class="wrap">
+      <div class="head center reveal"><span class="en">Program</span><h2 id="program-h">그룹 · 듀엣 · 개인 · <span class="nw">강사레슨</span></h2></div>
+      <div class="prog">
+        <div class="card big reveal">
+          <span class="en">Group Lesson</span>
+          <h3>특별한 그룹레슨</h3>
+          <p>원하는 프로그램을 다양한 강사님과 <span class="nw">함께해 보세요.</span></p>
+          <ul class="chips"><li>스트레칭</li><li>근막이완</li><li>다이어트</li><li>체형교정</li><li>근력증진</li><li>바디라인</li></ul>
+        </div>
+        <div class="side">
+          <div class="minis reveal">
+            <div class="card"><span class="en">Duet</span><h3>듀엣레슨</h3></div>
+            <div class="card"><span class="en">Private</span><h3>개인레슨</h3></div>
+            <div class="card"><span class="en">Teacher</span><h3>강사레슨</h3></div>
+          </div>
+          <div class="card spec reveal">
+            <span class="en">Special</span>
+            <h3>체형교정 · 산모 · <span class="nw">키즈 · 실버레슨</span></h3>
+            <p>기구 필라테스는 스프링의 저항을 활용해 개인의 체력과 운동 수준에 맞는 근력 운동을 <span class="nw">진행할 수 있어요.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sky" id="trial" aria-labelledby="trial-h">
+    <div class="wrap">
+      <div class="head center reveal"><span class="en">Trial</span><h2 id="trial-h">체험 수업</h2></div>
+      <ul class="trial reveal">
+        <li><b>그룹레슨체험</b><span>10,000<small>원</small></span></li>
+        <li><b>듀엣레슨체험(2인)</b><span>50,000<small>원</small></span></li>
+        <li><b>개인레슨체험</b><span>50,000<small>원</small></span></li>
+      </ul>
+      <p class="trial-note reveal">방문 전 상담예약을 주시면 <span class="nw">꼼꼼하고 친절한 상담</span> <span class="nw">도와드리겠습니다.</span></p>
+      <div class="trial-cta reveal"><a class="btn fill" href="https://m.place.naver.com/place/1279003738/home" target="_blank" rel="noopener">네이버로 체험 · 상담 예약</a></div>
+    </div>
+  </section>
+
+  <section class="sec" id="why" aria-labelledby="why-h">
+    <div class="wrap">
+      <div class="head center reveal"><span class="en">Why Queen</span><h2 id="why-h">필라테스퀸이 <span class="nw">준비한 것</span></h2></div>
+      <div class="why">
+        <div class="card reveal"><span class="n">01</span><h3>베테랑 강사진</h3><p>오픈부터 함께해 온 센터에 애정이 넘치는 강사진이 꾸준히 성실하게 근무하는 센터입니다. 친절한 7인의 강사진이 매 수업 열정적으로 운동을 도와드립니다.</p></div>
+        <div class="card reveal"><span class="n">02</span><h3>3D입체촬영 체형분석시스템 <span class="nw">+ 인바디기기</span></h3><p>내 몸의 뼈와 근육을 정확한 기기분석을 통해 더 정확하게 알 수 있도록 원장님이 꼼꼼하게 체형상담 해드립니다.</p></div>
+        <div class="card reveal"><span class="n">03</span><h3>수강권 등록 혜택</h3><p>운동 수강권만 등록하셔도 무료체형분석/유산소운동/전신안마기3대/샤워시설/ice아메리카노포장 혜택을 누리실 수 있습니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sky" id="space" aria-labelledby="space-h">
+    <div class="wrap">
+      <div class="head center reveal"><span class="en">Space</span><h2 id="space-h">장기동 래미안 맞은편, <span class="nw">두현프라자 6층</span></h2></div>
+      <ul class="space">
+        <li class="reveal"><figure><img src="pq-g01.webp" alt="민트색 안내 데스크와 PILATES QUEEN 간판" width="600" height="750" loading="lazy" /><figcaption>안내 데스크</figcaption></figure></li>
+        <li class="reveal"><figure><img src="pq-g02.webp" alt="벽 조명이 있는 흰 아치 통로 두 개" width="600" height="750" loading="lazy" /><figcaption>아치 통로</figcaption></figure></li>
+        <li class="reveal"><figure><img src="pq-g03.webp" alt="창가를 따라 놓인 원목 리포머" width="600" height="750" loading="lazy" /><figcaption>리포머</figcaption></figure></li>
+        <li class="reveal"><figure><img src="pq-g04.webp" alt="벽에 설치된 원목 래더와 스트랩" width="600" height="750" loading="lazy" /><figcaption>래더 · 월 유닛</figcaption></figure></li>
+        <li class="reveal"><figure><img src="pq-g05.webp" alt="거울 앞에 놓인 바렐과 체어" width="600" height="750" loading="lazy" /><figcaption>바렐 · 체어</figcaption></figure></li>
+        <li class="reveal"><figure><img src="pq-g06.webp" alt="민트색 벽 앞의 전신안마기 세 대" width="600" height="750" loading="lazy" /><figcaption>전신안마기 3대</figcaption></figure></li>
+        <li class="reveal"><figure><img src="pq-g07.webp" alt="꽃 그림 아래 커피 머신과 음료 테이블" width="600" height="750" loading="lazy" /><figcaption>커피 · 음료</figcaption></figure></li>
+        <li class="reveal"><figure><img src="pq-g08.webp" alt="유리문이 있는 대리석 샤워실" width="600" height="750" loading="lazy" /><figcaption>샤워시설</figcaption></figure></li>
+        <li class="reveal"><figure><img src="pq-g09.webp" alt="꽃 그림이 걸린 민트색 복도" width="600" height="750" loading="lazy" /><figcaption>복도</figcaption></figure></li>
+      </ul>
+      <ul class="fac reveal" aria-label="시설"><li>무료3D체형분석</li><li>안마기계3대</li><li>유산소기구</li><li>샤워시설</li><li>커피음료시설</li></ul>
+    </div>
+  </section>
+
+  <section class="sec visit" id="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div class="head reveal"><span class="en">Visit</span><h2 id="visit-h">방문상담은 <span class="nw">100% 예약제로 운영됩니다</span></h2></div>
+      <div class="grid">
+        <div>
+          <dl class="vinfo reveal">
+            <div><dt>HOURS</dt><dd><p>월–금 <span class="nw">09:00 - 22:00</span></p><p>토 <span class="nw">09:00 - 12:00</span></p><p class="way">정기휴무 (매주 일요일)</p></dd></div>
+            <div><dt>ADDRESS</dt><dd><p>경기 김포시 <span class="nw">김포한강2로104번길 62</span> <span class="nw">두현프라자 6층</span></p><p class="way">장기동 래미안 정문 반대편 <span class="nw">두현프라자 6층, 필라테스퀸</span></p></dd></div>
+            <div><dt>TEL</dt><dd><a href="tel:01077698815" class="nw">010-7769-8815</a></dd></div>
+            <div><dt>NOTE</dt><dd><p class="way">소중한 발걸음 해주시는 회원님들께 꼼꼼한 상담을 위해 방문상담은 100% 예약제로 운영되는 점 참고 <span class="nw">부탁드립니다 :)</span></p></dd></div>
+          </dl>
+          <div class="row reveal">
+            <a class="btn fill" href="https://m.place.naver.com/place/1279003738/home" target="_blank" rel="noopener">네이버 예약 · 방문상담</a>
+            <a class="btn" href="tel:01077698815">전화</a>
+            <a class="btn" href="https://map.naver.com/p/entry/place/1279003738" target="_blank" rel="noopener">네이버 지도</a>
+          </div>
+        </div>
+        <iframe class="map reveal" title="필라테스퀸 위치 지도" src="https://www.google.com/maps?q=%EA%B9%80%ED%8F%AC%ED%95%9C%EA%B0%952%EB%A1%9C104%EB%B2%88%EA%B8%B8+62&amp;z=17&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="brand"><b>PILATES QUEEN</b></span>
+    <p>필라테스퀸 · 경기 김포시 <span class="nw">김포한강2로104번길 62</span> <span class="nw">두현프라자 6층</span></p>
+    <p><a href="tel:01077698815" class="nw">010-7769-8815</a> · 월–금 <span class="nw">09:00 - 22:00</span> · 토 <span class="nw">09:00 - 12:00</span> · <span class="nw">일요일 휴무</span></p>
+    <p><a href="https://www.instagram.com/pilates_queen8/" target="_blank" rel="noopener">@pilates_queen8</a> · <a href="https://blog.naver.com/pilatesqueen8" target="_blank" rel="noopener">블로그</a> · <a href="https://m.place.naver.com/place/1279003738/home" target="_blank" rel="noopener" class="nw">네이버 플레이스</a></p>
+    <p>© PILATES QUEEN</p>
+  </div>
+</footer>
+
+<nav class="quick" aria-label="빠른 연결">
+  <a class="fill" href="https://m.place.naver.com/place/1279003738/home" target="_blank" rel="noopener">네이버 예약</a>
+  <a href="tel:01077698815">전화</a>
+  <a href="https://blog.naver.com/pilatesqueen8/224206524904" target="_blank" rel="noopener">시간표</a>
+</nav>
+
+<script>
+(function(){
+  var pending=[].slice.call(document.querySelectorAll('.reveal'));
+  pending.forEach(function(el){
+    var sib=[].slice.call(el.parentNode.children).filter(function(c){ return c.classList.contains('reveal'); });
+    if(sib.length>1){ el.style.setProperty('--d',(Math.min(sib.indexOf(el),5)*0.07)+'s'); }
+  });
+  function showAll(){ pending.forEach(function(el){ el.classList.add('in'); }); pending=[]; }
+  function start(){
+    var t=setInterval(function(){
+      if(!pending.length){ clearInterval(t); return; }
+      if(window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 4){ showAll(); return; }
+      var line=window.innerHeight*0.92;
+      pending=pending.filter(function(el){
+        if(el.getBoundingClientRect().top < line){ el.classList.add('in'); return false; }
+        return true;
+      });
+    },120);
+  }
+  var started=false; function go(){ if(started) return; started=true; start(); }
+  var intro=document.querySelector('.intro'); setTimeout(function(){ if(intro) intro.classList.add('on'); },60);
+  /* 부드러운 스크롤(R-25): OS '동작 줄이기'면 CSS smooth가 즉시 이동으로 바뀌어 rAF로 직접 움직임 · 1초 폴백 · 사용자 휠/터치면 중단 · 끝나면 대상 섹션으로 포커스 */
+  document.addEventListener('click',function(e){
+    var a=e.target.closest ? e.target.closest('a[href^="#"]') : null; if(!a) return;
+    var id=a.getAttribute('href'); if(id.length<2) return;
+    var t=document.querySelector(id); if(!t) return;
+    e.preventDefault();
+    var head=document.querySelector('.top'); var off=(head ? head.getBoundingClientRect().height : 0)+10;
+    var y0=window.pageYOffset; var y1=(id==='#top') ? 0 : Math.max(0, t.getBoundingClientRect().top+y0-off);
+    var dur=700, s0=null, done=false;
+    function ease(p){ return p<.5 ? 4*p*p*p : 1-Math.pow(-2*p+2,3)/2; }
+    function stop(){ done=true; window.removeEventListener('wheel',stop); window.removeEventListener('touchstart',stop); }
+    function finish(){ stop(); if(!t.hasAttribute('tabindex')){ t.setAttribute('tabindex','-1'); } t.focus({preventScroll:true}); }
+    window.addEventListener('wheel',stop,{passive:true}); window.addEventListener('touchstart',stop,{passive:true});
+    function step(ts){ if(done) return; if(s0===null) s0=ts; var p=Math.min((ts-s0)/dur,1); window.scrollTo(0, y0+(y1-y0)*ease(p)); if(p<1){ requestAnimationFrame(step); } else { finish(); } }
+    requestAnimationFrame(step);
+    setTimeout(function(){ if(!done){ window.scrollTo(0,y1); finish(); } }, dur+300);
+    if(history.pushState){ history.pushState(null,'',id); }
+  });
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(go); }
+  setTimeout(go,1200);
+})();
+</script>
+</body>
+</html>
