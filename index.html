@@ -86,20 +86,20 @@ a{ color:inherit; }
 .btn:active{ transform:scale(.98); }
 @media (hover:hover){ .btn:hover{ background:var(--sky); } .btn.fill:hover{ background:var(--blue-d); border-color:var(--blue-d); } }
 
-/* 히어로: 하늘색 바탕 문구 + 넓은 사진 */
-.hero{ background:linear-gradient(180deg, var(--sky) 0%, var(--white) 100%); padding:52px 0 0; text-align:center; }
-.hero .en{ font-family:var(--serif); font-size:.86rem; letter-spacing:.24em; color:var(--blue); }
-.hero h1{ margin-top:14px; font-size:clamp(1.6rem, 6vw, 2.7rem); font-weight:600; line-height:1.38; letter-spacing:-.01em; }
-.hero .sub{ margin-top:12px; color:var(--soft); }
-.hero .tags{ list-style:none; display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-top:20px; }
-.hero .tags li{ padding:5px 12px; border:1px solid var(--sky2); background:var(--white); border-radius:var(--r); font-size:.88rem; color:var(--blue-d); }
-.cta{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px; margin:28px auto 0; max-width:480px; }
+/* 히어로: 좌우 분할 · 사진 + 큰 워드마크 (다올 선택 A · 2026-11-23) */
+.hero{ display:grid; grid-template-columns:minmax(0,1fr); background:var(--white); }
+.hero .ph{ position:relative; height:50svh; min-height:300px; max-height:520px; }
+.hero .ph img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.hero .tx{ background:var(--sky); padding:34px 20px 44px; }
+.hero .wm{ font-family:var(--serif); font-weight:600; font-size:clamp(2.4rem, 10vw, 4.6rem); line-height:1.02; letter-spacing:.04em; color:var(--blue-d); white-space:nowrap; }
+@media (min-width:900px){ .hero .wm{ font-size:clamp(2.4rem, 4.6vw, 4.6rem); } }
+.hero h1{ margin-top:22px; font-size:clamp(1.15rem, 3.8vw, 1.55rem); font-weight:600; line-height:1.5; letter-spacing:-.01em; }
+.hero .sub{ margin-top:4px; color:var(--soft); }
+.cta{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px; margin-top:28px; max-width:440px; }
+@media (min-width:900px) and (max-width:1279.98px){ .cta{ grid-template-columns:minmax(0,1fr); } }
 .cta .btn:first-child{ grid-column:1 / -1; }
 @media (max-width:439.98px){ .cta{ grid-template-columns:minmax(0,1fr); } }
-.hero .shot{ margin:44px auto 0; width:min(100% - 40px, 1120px); }
-.hero .shot img{ width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:var(--r); }
-@media (max-width:767.98px){ .hero .shot img{ aspect-ratio:3/4; } .hero .shot{ max-width:460px; } }
-@media (min-width:900px){ .hero{ padding-top:76px; } }
+@media (min-width:900px){ .hero{ grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); min-height:calc(100svh - 65px); } .hero .ph{ height:auto; max-height:none; min-height:560px; } .hero .tx{ display:flex; flex-direction:column; justify-content:center; padding:56px clamp(40px, 5vw, 80px); } }
 
 /* 공통 */
 .sec{ padding:96px 0; }
@@ -216,22 +216,21 @@ h2{ margin-top:8px; font-size:clamp(1.4rem, 5vw, 1.95rem); font-weight:600; line
 
 <main id="top">
   <section class="hero" aria-labelledby="hero-h">
-    <div class="wrap intro">
-      <p class="en">Gimpo · Janggi-dong</p>
-      <h1 id="hero-h">CES교정운동 <span class="nw">전문가 원장직강</span></h1>
-      <p class="sub">김포 장기동 기구필라테스, <span class="nw">필라테스퀸</span></p>
-      <ul class="tags"><li>체형교정</li><li>코어강화</li><li>근력증진</li><li>유연성</li></ul>
+    <div class="ph">
+      <picture>
+        <source media="(max-width:899.98px)" srcset="pq-hero-m.webp" width="810" height="1080" />
+        <img src="pq-hero.webp" alt="창가에 캐딜락과 체어가 놓인 필라테스퀸 스튜디오" width="960" height="960" fetchpriority="high" />
+      </picture>
+    </div>
+    <div class="tx intro">
+      <p class="wm" aria-hidden="true">PILATES<br />QUEEN</p>
+      <h1 id="hero-h">CES교정운동 전문가 <span class="nw">원장직강</span></h1>
+      <p class="sub">김포 장기동 <span class="nw">기구필라테스</span></p>
       <div class="cta">
         <a class="btn fill" href="https://m.place.naver.com/place/1279003738/home" target="_blank" rel="noopener">네이버 예약 · 방문상담</a>
         <a class="btn" href="tel:01077698815">전화 <span class="nw">010-7769-8815</span></a>
         <a class="btn" href="https://blog.naver.com/pilatesqueen8/224206524904" target="_blank" rel="noopener">그룹레슨 시간표</a>
       </div>
-    </div>
-    <div class="shot">
-      <picture>
-        <source media="(max-width:767.98px)" srcset="pq-hero-m.webp" width="810" height="1080" />
-        <img src="pq-hero.webp" alt="창가에 캐딜락 기구가 놓인 필라테스퀸 스튜디오" width="1280" height="720" fetchpriority="high" />
-      </picture>
     </div>
   </section>
 
